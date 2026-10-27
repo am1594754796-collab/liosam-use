@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
+<package format="3">
+  <name>venom_bringup</name>
+  <version>0.0.0</version>
+  <description>Bringup package for venom auto-aim and robot visualization.</description>
+  <maintainer email="liyihan.xyz@gmail.com">venom</maintainer>
+  <license>TODO: License declaration</license>
+
+  <depend>rclpy</depend>
+  <depend>sensor_msgs</depend>
+  <depend>nav_msgs</depend>
+  <depend>geometry_msgs</depend>
+
+  <exec_depend>launch</exec_depend>
+  <exec_depend>launch_ros</exec_depend>
+  <exec_depend>tf2_ros</exec_depend>
+  <exec_depend>robot_state_publisher</exec_depend>
+  <exec_depend>xacro</exec_depend>
+  <exec_depend>rviz2</exec_depend>
+  <exec_depend>venom_robot_description</exec_depend>
+  <exec_depend>venom_px4_bridge</exec_depend>
+  <exec_depend>realsense2_camera</exec_depend>
+  <exec_depend>hik_camera</exec_depend>
+  <exec_depend>armor_detector</exec_depend>
+  <exec_depend>armor_tracker</exec_depend>
+  <exec_depend>auto_aim_solver</exec_depend>
+  <exec_depend>venom_serial_driver</exec_depend>
+  <exec_depend>launch_sim</exec_depend>
+
+  <test_depend>ament_copyright</test_depend>
+  <test_depend>ament_flake8</test_depend>
+  <test_depend>ament_pep257</test_depend>
+  <test_depend>python3-pytest</test_depend>
+
+  <export>
+    <build_type>ament_python</build_type>
+  </export>
+</package>

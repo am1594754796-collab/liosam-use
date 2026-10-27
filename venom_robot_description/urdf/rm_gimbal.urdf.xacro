@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<robot name="rm_gimbal"
+  xmlns:xacro="http://ros.org/wiki/xacro">
+
+  <xacro:arg name="xyz" default="0.04 0.11 0.02" />
+  <xacro:arg name="rpy" default="0 0 0" />
+
+  <link name="odom" />
+
+  <link name="gimbal_link" />
+
+  <joint name="gimbal_joint" type="floating">
+    <parent link="odom" />
+    <child link="gimbal_link" />
+  </joint>
+
+  <link name="camera_link" />
+
+</robot>
